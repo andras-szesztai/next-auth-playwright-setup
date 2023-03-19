@@ -5,10 +5,6 @@ import AzureADProvider from 'next-auth/providers/azure-ad'
 export const authOptions: AuthOptions = {
     // Configure one or more authentication providers
     providers: [
-        GithubProvider({
-            clientId: process.env.GITHUB_ID as string,
-            clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
-        }),
         AzureADProvider({
             clientId: process.env.AZURE_AD_CLIENT_ID as string,
             clientSecret: process.env.AZURE_AD_CLIENT_SECRET as string,
