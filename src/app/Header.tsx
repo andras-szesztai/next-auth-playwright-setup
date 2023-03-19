@@ -1,4 +1,4 @@
-import { SignIn, SignOut } from './actions'
+import { SignOut, SignIn } from './actions'
 import { getServerSession } from 'next-auth/next'
 import { authOptions } from '../../pages/api/auth/[...nextauth]'
 
